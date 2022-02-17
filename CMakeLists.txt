@@ -10,7 +10,7 @@ set(PYBIND_DIR ${PROJECT_SOURCE_DIR}/dependencies/pybind11)
 add_subdirectory(${SFML_DIR})
 add_subdirectory(${PYBIND_DIR})
 
-add_executable(SampleSFML main.cpp)
+add_executable(SampleSFML main.cpp Fly.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${SFML_DIR}/include ${OPEN_MP_DIR}/include)
 target_link_directories(${PROJECT_NAME} PRIVATE ${SFML_DIR}/src)
